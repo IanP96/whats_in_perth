@@ -1,0 +1,8 @@
+* {
+    /* Override user agent margins/padding */
+    margin: 0;
+    padding: 0;
+
+    /* Text appearance */
+    font-family: sans-serif;
+}
