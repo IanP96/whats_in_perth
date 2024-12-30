@@ -40,13 +40,25 @@ main > section {
 
     background-image: url("./media/perth.jpg");
     background-size: cover;
+}
 
-    & button {
-        background-color: lightblue;
-        font-size: 1.4rem;
-        padding: 0.6rem;
-        border-radius: 10px;
-        border: 0;
+/* Shuffle button */
+main > section > button {
+    background-color: lightblue;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0.6rem;
+    border-style: none;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: rgb(40, 80, 255);
+        transition: 0.25s;
     }
 }
 
