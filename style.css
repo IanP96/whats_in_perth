@@ -44,7 +44,7 @@ main > section {
     & button {
         background-color: lightblue;
         font-size: 1.4rem;
-        padding: 0.2rem;
+        padding: 0.6rem;
         border-radius: 10px;
         border: 0;
     }
