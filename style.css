@@ -31,12 +31,16 @@ main > section {
     height: 100%;
     padding-left: 10vw;
     padding-right: 10vw;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1rem;
-    gap: 1rem;
+    gap: 2rem;
     font-size: 1.4rem;
+
+    background-image: url("./media/perth.jpg");
+    background-size: cover;
+
     & button {
         background-color: lightblue;
         font-size: 1.4rem;
