@@ -1,8 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inter:wght@100..900&display=swap');
+
 * {
     /* Override user agent margins/padding */
     margin: 0;
     padding: 0;
 
     /* Text appearance */
-    font-family: sans-serif;
+    font-family: "Funnel Sans", sans-serif;
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: lightgray;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+main {
+    height: 100%;
+}
+
+main > section {
+    height: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1rem;
+    font-size: 1.4rem;
+    & button {
+        background-color: lightblue;
+        font-size: 1.4rem;
+        padding: 0.2rem;
+        border-radius: 10px;
+        border: 0;
+    }
+}
+
+footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lightgray;
+
+    & > p {
+        margin: 1rem;
+    }
 }
