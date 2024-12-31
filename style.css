@@ -55,6 +55,12 @@ main > section > button {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 0.4rem;
+
+    /* Dice icon */
+    & > img {
+        height: 1.6rem;
+    }
 
     &:hover {
         background-color: rgb(40, 80, 255);
