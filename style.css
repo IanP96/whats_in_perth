@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inter:wght@100..900&display=swap');
 
+:root {
+    --header-footer-bg: rgba(100, 100, 100, 0.5);
+    --header-footer-text: rgb(230, 230, 230);
+}
+
 * {
     /* Override user agent margins/padding */
     margin: 0;
@@ -10,17 +15,22 @@
     text-align: center;
 }
 
-body {
+/* body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-}
+} */
 
 header {
-    background-color: lightgray;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: var(--header-footer-bg);
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 2rem;
+
+    color: var(--header-footer-text);
 
     display: flex;
     flex-direction: row;
@@ -33,12 +43,12 @@ header {
     }
 }
 
-main {
+/* main {
     height: 100%;
-}
+} */
 
 main > section {
-    height: 100%;
+    height: 100vh;
     padding-left: 10vw;
     padding-right: 10vw;
 
@@ -85,13 +95,21 @@ main > section {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: lightgray;
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text);
 
     & > p {
         margin: 1rem;
+    }
+
+    & a {
+        color: var(--header-footer-text);
     }
 }
