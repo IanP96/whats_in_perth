@@ -42,6 +42,8 @@ main > section {
     padding-left: 10vw;
     padding-right: 10vw;
 
+    color: white;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,8 +54,12 @@ main > section {
     background-size: cover;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Shuffle button */
-main > section > button {
+#shuffle-button {
     background-color: lightblue;
     font-size: 1.4rem;
     margin: 0;
