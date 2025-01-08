@@ -92,6 +92,10 @@ main > section {
         background-color: rgb(40, 80, 255);
         /* transition: 0.25s; */
     }
+
+    &:disabled {
+        background-color: lightgray;
+    }
 }
 
 footer {
