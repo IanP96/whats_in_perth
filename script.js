@@ -18,7 +18,7 @@ const shuffleCount = 4;
 const activities = [
     new Activity(
         "Dining @ Westfield Carousel",
-        "Discover exceptional dining at Westfield Carousel, Perth's ultimate destination for food lovers. Enjoy diverse cuisines, stylish eateries, and a vibrant atmosphere perfect for every occasion.",
+        "Westfield Carousel offers diverse dining options, from casual cafes to rooftop restaurants, featuring cuisines like Italian, Asian and modern Australian in a stylish setting.",
         "dine_westfield_carousel.jpg"
     )
 ];
