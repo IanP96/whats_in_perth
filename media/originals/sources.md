@@ -1,0 +1,3 @@
+- perth.jpg https://en.wikipedia.org/wiki/Perth
+- dine_westfield_carousel.jpg https://www.facebook.com/littlebangkokperth/posts/little-bangkok-in-westfield-carousel-were-one-of-the-most-popular-thai-restauran/978213955941341/
+- rottnest_island.jpg https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rottnestfastferries.com.au%2Frottnest-island%2Fblogs%2Fcamping-spots-guide&psig=AOvVaw0JXIEhFpPNJXeqnuE-gy0T&ust=1736410855670000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCODLtdrY5YoDFQAAAAAdAAAAABAE

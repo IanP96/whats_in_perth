@@ -20,6 +20,11 @@ const activities = [
         "Dining @ Westfield Carousel",
         "Westfield Carousel offers diverse dining options, from casual cafes to rooftop restaurants, featuring cuisines like Italian, Asian and modern Australian in a stylish setting.",
         "dine_westfield_carousel.jpg"
+    ),
+    new Activity(
+        "Day trip @ Rottnest Island",
+        "Escape to Rottnest Island for a perfect day trip! Enjoy pristine beaches, scenic bike trails, snorkeling, and meet the iconic quokkas for unforgettable memories.",
+        "rottnest_island.jpg"
     )
 ];
 
@@ -31,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const desc = document.getElementById("activity-desc");
     const section = document.getElementById("main-section");
 
+    // todo implement short wait in between
     function shuffle() {
         // todo refactor so the same element won't be shuffled to twice
         for (let i = 0; i < 4; i++) {
