@@ -131,7 +131,7 @@ const activities = [
     new Activity(
         "Tour Caversham Wildlife Park",
         "Interact with native animals at Caversham Wildlife Park. Hand-feed kangaroos, meet wombats, and watch fascinating wildlife shows.",
-        "caversham_wildlife_park.jpeg"
+        "caversham_wildlife_park.png"
     ),
     new Activity(
         "Visit Mundaring Weir",
