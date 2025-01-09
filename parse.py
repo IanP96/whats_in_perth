@@ -1,3 +1,7 @@
+"""
+Helper code to convert list of activities from ChatGPT to JS array format
+"""
+
 with open("activities_from_chat.md", "r") as file:
     activities = file.read().split("\n\n")
     output = ""
