@@ -267,12 +267,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const section = document.getElementById("main-section");
 
     /**
+     * Return index of a random activity
+     */
+    function randomActivityIndex() {
+        return Math.floor(Math.random() * activities.length);
+    }
+
+    /**
+     * Set background image of main section
+     */
+    function setBgImage(imgName) {
+        section.style.backgroundImage = `url('./media/activities/${imgName}')`;
+    }
+
+    /**
      * Shuffle once. Return index of activity chosen. lastActivity is the idnex of lastactivity displayed (choose a different activity)
      */
     function shuffleOnce(lastActivity) {
 
         // Pick random activity different to current one
-        let activityIndex = Math.floor(Math.random() * activities.length);
+        let activityIndex = randomActivityIndex();
         if (activityIndex == lastActivity) {
             if (activityIndex == 0) {
                 activityIndex++;
@@ -285,7 +299,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Style HTML elements
         header.innerHTML = activity.header;
         desc.innerHTML = activity.desc;
-        section.style.backgroundImage = `url('./media/activities/${activity.imgPath}')`;
+        setBgImage(activity.imgPath);
         header.classList.remove("hidden");
 
         return activityIndex;
@@ -311,5 +325,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     shuffleBtn.addEventListener("click", shuffleBtnClicked);
+
+    // Set a random bg image
+    setBgImage(activities[randomActivityIndex()].imgPath);
     
 });
