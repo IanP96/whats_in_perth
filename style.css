@@ -60,8 +60,11 @@ main > section {
     gap: 2rem;
     font-size: 1.4rem;
 
-    background-image: url("./media/perth.jpg");
+    /* background-image: url("./media/perth.jpg"); */
+    background-image: url("./media/activities/helicopter_tour.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .hidden {
@@ -113,7 +116,12 @@ footer {
         margin: 1rem;
     }
 
-    & a {
+    /* & a {
         color: var(--header-footer-text);
-    }
+    } */
+}
+
+a {
+    /* Font colour of links will match rest of paragraph */
+    color: inherit;
 }
