@@ -181,7 +181,7 @@ const activities = [
     new Activity(
         "Take a Jetpack Adventure",
         "Experience thrilling jetpack adventures over the water. Fly high and feel the adrenaline with this unique activity available in Perth.",
-        "jetpack_adventures.jpeg"
+        "jetpack_adventures.jpg"
     ),
     new Activity(
         "Explore Bold Park",
