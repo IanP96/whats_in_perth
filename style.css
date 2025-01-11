@@ -125,3 +125,9 @@ a {
     /* Font colour of links will match rest of paragraph */
     color: inherit;
 }
+
+.invisible {
+    opacity: 0;
+    position: fixed;
+    width: 10px;
+}

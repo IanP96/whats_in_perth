@@ -258,26 +258,42 @@ const activities = [
 // Index of current displayed activity, or -1 if no activity displayed yet (button not pressed)
 let currentActivity = -1;
 
+/**
+ * Return index of a random activity
+ */
+function randomActivityIndex() {
+    return Math.floor(Math.random() * activities.length);
+}
+
+/**
+ * Get formatted image url path from image filename
+ */
+function imgUrl(imgName) {
+    return `url('./media/activities/${imgName}')`;
+}
+
+// Load all images by adding every image as an invisible div element
+// inspired by https://www.reddit.com/r/learnjavascript/comments/94uzf2/comment/e3qqjva/?utm_source=share&utm_medium=web3xutm_name=web3xcss&utm_term=1&utm_content=share_button
+const section = document.getElementById("main-section");
+activities.forEach(activity => {
+    const div = document.createElement("div");
+    div.classList.add("invisible");
+    div.style.backgroundImage = imgUrl(activity.imgPath)
+    section.appendChild(div);
+});
+
 // Only try to access DOM elements once loading complete (avoid null exceptions)
 document.addEventListener("DOMContentLoaded", function () {
 
     const shuffleBtn = document.getElementById("shuffle-btn");
     const header = document.getElementById("activity-header");
     const desc = document.getElementById("activity-desc");
-    const section = document.getElementById("main-section");
-
-    /**
-     * Return index of a random activity
-     */
-    function randomActivityIndex() {
-        return Math.floor(Math.random() * activities.length);
-    }
 
     /**
      * Set background image of main section
      */
     function setBgImage(imgName) {
-        section.style.backgroundImage = `url('./media/activities/${imgName}')`;
+        section.style.backgroundImage = imgUrl(imgName);
     }
 
     /**
