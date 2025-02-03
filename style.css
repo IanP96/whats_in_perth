@@ -124,6 +124,8 @@ footer {
 a {
     /* Font colour of links will match rest of paragraph */
     color: inherit;
+
+    white-space: nowrap;
 }
 
 .invisible {
